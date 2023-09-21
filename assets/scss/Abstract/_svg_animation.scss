@@ -1,0 +1,48 @@
+@use "./variables" as *;
+
+#circle {
+  animation: circles 100s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#balls_circle {
+  animation: balls 18s linear infinite;
+  transform-origin: center;
+  //   transform-origin: inherit;
+  transform-box: fill-box;
+}
+
+#eyeball_small_black {
+  animation: eye_ball 3s linear infinite alternate;
+}
+
+@keyframes eye_ball {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(3%);
+
+    transform: translateX(-3%);
+    // transform: translateX(3%);
+  }
+}
+
+@keyframes circles {
+  from {
+    transform: rotateZ(-360deg);
+  }
+  to {
+    transform: rotateZ(0);
+  }
+}
+
+@keyframes balls {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-360deg);
+  }
+}

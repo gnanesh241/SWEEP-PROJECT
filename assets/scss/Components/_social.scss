@@ -1,0 +1,45 @@
+@use "../Abstract/" as *;
+
+.social-text {
+  padding: 0.7rem 0;
+  font-size: 1rem;
+
+  @include tablet {
+    padding: 0.3rem 0;
+  }
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+
+  @include tablet {
+    margin: 0;
+  }
+
+  .social-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+    margin-right: 0.45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    color: rgb(0, 174, 255);
+    transition: 0.3s transform, border-color ease-in;
+
+    &:hover {
+      transform: scale(1.1);
+      border-color: rgb(0, 174, 255);
+      box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+
+      @include mobile {
+        box-shadow: rgba(149, 157, 165, 0.4) 0px 4px 14px;
+      }
+    }
+  }
+}
