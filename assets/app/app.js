@@ -9,9 +9,6 @@ const email = document.getElementById("email");
 const password_signIn = document.getElementById("password_signIn");
 const password_signUp = document.getElementById("password_signUp");
 const password2 = document.getElementById("password2");
-const btn_login = document.getElementById("btn-login");
-const btn_register = document.getElementById("btn-register");
-
 // Show input error message
 function showError(input, message) {
   const formControler = input.parentElement;
@@ -27,15 +24,15 @@ function showSuccess(input) {
 }
 
 // Show if an email is valid
-function checkEmail(input) {
-  const regExpr =
-    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  if (regExpr.test(input.value.trim())) {
-    showSuccess(input);
-  } else {
-    showError(input, "Email is not valid");
-  }
-}
+// function checkEmail(input) {
+//   const regExpr =
+//     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+//   if (regExpr.test(input.value.trim())) {
+//     showSuccess(input);
+//   } else {
+//     showError(input, "Email is not valid");
+//   }
+// }
 
 // check if Passwords Match
 function checkPswMatch(input1, input2) {

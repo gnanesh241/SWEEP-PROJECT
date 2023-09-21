@@ -1,10 +1,6 @@
-import React from 'react'
+
 import {products} from '../constants'
 import PopularProductCard from '../components/PopularProductCard'
-import Button from '../components/Button';
-import{arrowRight} from '../../assets/icons';
-
-
 const Popularproduct = () => {
   return (
     <section id='products' className='max-container max-sm:mt-12'>
